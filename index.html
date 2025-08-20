@@ -7,42 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-
-    *{
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: rgb(2, 2, 70);
-      color: white;
-      font-family: "Libertinus Sans", sans-serif;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 80px;
-      background-color: rgb(6, 6, 114);
-    }
-
-    nav ul{
-      display: flex;
-      justify-content: center;
-    }
-
-    nav ul li {
-      list-style: none;
-      margin: 0 23px;
-    }
-
-    .left {
-      font-size: 1.5rem;
-    }
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -51,15 +16,37 @@
       <div class="left">Parth's Portfolio</div>
       <div class="right">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contect me</li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contect me</a></li>
         </ul>
       </div>
     </nav>
   </header>
+
+  <main>
+    <div class="firstsection">
+      <div class="leftsection">
+        Hi, My name is <span class="name">Parth Ranjan</span>
+        <div>And I'm a </div>
+          <!-- Element to contain animated typing -->
+            <span id="element"></span>
+      </div>
+      <div class="rightsection">
+        <img src="bg.png" alt="image">
+      </div>
+    </div>
+  </main>
   
-  <script src="test.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Beginner Web Developer', 'Technology Enthusiast'],
+      typeSpeed: 100,
+    });
+  </script>
 </body>
 </html>
