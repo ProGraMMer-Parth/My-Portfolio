@@ -46,6 +46,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+      margin: 20px 0;
     }
 
     .firstsection > div {
@@ -57,12 +58,7 @@
     }
 
     .leftsection div {
-        margin: 20px 0;
-    }
-
-    #element {
-        color: rgb(255, 255, 255);
-        font-weight: 700;
+        margin: 10px 0;
     }
     
     .rightsection img {
@@ -70,11 +66,69 @@
         margin-top: 50px;
     }
 
+    /* Typing Aniamtion */
+
+    .wrapper {
+      display: grid;
+    }
+
+    .typing-demo {
+      width: 25ch;
+      animation: typing 2s steps(30),
+      blink 0.8s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      font-size: 2.4rem;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    .secondsection {
+      max-width: 87vw;
+      margin: auto;
+    }
+
+    hr {
+      border: 0;
+      background-color: rgb(158, 178, 236);
+      height: 1.2px;
+      margin: 40px 84px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     /* Utility section */
     
     .name {
+        color: rgb(182, 116, 244);  
+    }
+
+    .typing-demo b {
         color: rgb(182, 116, 244);  
     }
