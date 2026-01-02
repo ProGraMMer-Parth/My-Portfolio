@@ -1,51 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <header>
-    <nav>
-      <div class="left">Parth's Portfolio</div>
-      <div class="right">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Projects</a></li>
-          <li><a href="/">Contect me</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="" type="image/x-icon">
 
-  <main>
-    <div class="firstsection">
-      <div class="leftsection">
-        Hi, My name is <span class="name">Parth Ranjan</span>
-        <div>And I'm a </div>
-            <div class="wrapper">
-              <div class="typing-demo">
-                <b>Beginner Web Developer</b>
-              </div>
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>parth's portfolio   </title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <div class="blob-animate"></div>
+            <nav class="nav container">
+               <a href="" class="nav_logo">Parth</a>
+               <ul class="nav_list">
+                  <li>
+                     <a href="#about" class="nav_link">About us</a>
+                  </li>
+                  <li>  
+                     <a href="#projects" class="nav_link">Projects</a>
+                  </li>
+                  <li>
+                     <a href="#contacts" class="nav_link">Contact us</a>
+                  </li>
+               </ul>
+            </nav>
+
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!-- CUSTOM CURSOR -->
+         
+         <!--==================== HOME ====================-->
+         <section class="home section">
+            <div class="home_shadow"></div>
+            <div class="home_container container grid">
+               <div class="home_data">
+                  <h3 class="home_greeting">Hello, I'm</h3>
+                  <div class="home_name">Parth<br>Ranjan</div>
+               </div>
+
+               <div class="home_image">
+                  <div class="blob-animate"></div>
+                  <img src="assets/img/my pic.png" alt="image" class="home_perfil">
+                  
+               </div>
+
+               <div class="home_info">
+                  <h3 class="home_split">Creative</h3>
+                  <!-- insert profession, short text -->
+                  <h2 class="home_profession-1">Developer</h2>
+                  <h2 class="home_profession-2">& Designer</h2>
+
+               </div>
+
+               <div class="home_social">
+                  <a href="https://www.linkedin.com/" target="_blank" class="home_social-link">
+                     <i class="ri-linkedin-box-line"></i>
+                  </a>
+
+                  <a href="https://github.com/" target="_blank" class="home_social-link">
+                     <i class="ri-github-line"></i>
+                  </a>
+
+                  <a href="https://www.instagram.com/" target="_blank" class="home_social-link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+                  <a href="https://twitter.com/" target="_blank" class="home_social-link">
+                     <i class="ri-twitter-line"></i>
+                  </a>
+
+               </div>
+
+               <a href="assets/pdf/Anid-Cv.pdf" download target="_blank" class="home_cv">
+                  RESUME <i class="ri-file-list-2-line"></i>
+               </a>
             </div>
-      </div>
-      <div class="rightsection">
-        <img src="bg.png" alt="image">
-      </div>
-    </div>
-<hr>
-    <div class="secondsection">
-      <h1>Past Experience</h1>
-    </div>
+         </section>
 
-  </main>
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            
+         </section>
 
-</body>
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            
+         </section>
+
+         <!--==================== WORK ====================-->
+         <section class="work section">
+
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+
+         </section>
+
+         <!--==================== TESTIMONIALS ====================-->
+         <section class="testimonials section">
+
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer grid">
+         
+      </footer>
+      
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+
+      <!--=============== ANIME JS ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src=""></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
