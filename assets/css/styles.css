@@ -261,9 +261,9 @@ img {
 }
 
 .home_image .blob-animate {
-  height: 250px;
-  width: 250px;
-  bottom: 40px;
+  height: 220px;
+  width: 220px;
+  bottom: 50px;
   justify-self: center;
 }
 
@@ -422,8 +422,8 @@ img {
   
   .blob,
   .home_image .blob-animate {
-    width: 220px;
-    height: 220px;
+    width: 190px;
+    height: 190px;
   }
 }
 
@@ -434,13 +434,24 @@ img {
   
   .blob,
   .home_image .blob-animate {
-    width: 165x;
-    height: 165px;
+    width: 155x;
+    height: 155px;
   }
 }
 
 /* For medium devices */
+@media screen and (min-width:550px){
+  .home_container {
+    width: 460px;
+    margin-inline: auto;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .home_container {
+    width: 600px;
+  }  
+}
 
 /* For large devices */
 @media screen and (min-width: 1150px) {
@@ -457,6 +468,76 @@ img {
     flex-direction: row;
     column-gap: 5.5rem;
   }
+
+  .home_container {
+    width: initial;
+    padding-top: 3rem;
+  }
+
+  .home_perfil {
+    width: 600px;
+  }
+
+  .home_image .blob-animate {
+    width: 450px;
+    height: 450px;
+    bottom: 5rem;
+    filter: blur(50px);
+  }
+
+  .home_shadow {
+    width: 700px;
+    height: 700px;
+    right: 0;
+    left: 0;
+    margin-inline: auto;
+    background: linear-gradient(180deg,
+                hsla(240, 100%, 2%, 0) 60%,
+                hsl(240, 100%, 2%) 95%);
+  }
+
+  .home_data {
+    position: absolute;
+    top: 12rem;
+    left: 3rem;
+    z-index: 2;
+  }
+
+  .home_info {
+    top: 12rem;
+    right: 1rem;
+    bottom: initial;
+  }
+
+  .home_split {
+    font-size: var(--h2-font-size);
+  }
+
+  .home_profession-1 {
+    font-size: var(--biggest-font-size);
+    text-align: initial;
+  }
+
+  .home_profession-2 {
+    font-size: var(--biggest-font-size);
+    transform: translateY(-1.5rem);
+  }
+
+  .home_social {
+    bottom: 3rem;
+    row-gap: 1.5rem;
+  }
+
+  .home_social-link {
+    font-size: 1.5rem;
+  }
+
+  .home_cv {
+    font-size: var(--normal-font-size);
+    rotate: 0deg;
+    right: 0;
+  }
+
 }
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
