@@ -171,7 +171,17 @@ img {
 }
 
 /* Blob */
-
+.blob {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(180deg,
+              var(--first-color) 0%,
+              var(--first-color-alt) 100%);
+border-radius: 50%;
+filter: blur(50px);
+position: absolute;
+z-index: -1;
+}
 
 /*=============== CUSTOM CURSOR ===============*/
 
@@ -452,10 +462,110 @@ img {
 }
 
 /*=============== PROJECTS ===============*/
+.projects .section__title {
+  text-align: initial;
+  margin-left: 1.5rem;
+}
+
+.projects_card {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.projects_card .blob {
+  z-index: 0;
+  right: -7.75px;
+  bottom: 0;
+}
+
+.projects_number, .projects_data, .projects_image {
+  position: relative;
+  z-index: 2;
+}
+
+.projects_number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects_number h1 {
+  font-size: var(--bigger-font-size);
+}
+
+.projects_number h3 {
+  font-weight: var(--font-regular);
+  font-size: var(--h3-font-size);
+}
+
+.projects_data {
+  margin-block: 2rem;
+}
+
+.projects_title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1rem;
+}
+
+.projects_subtitle {
+  font-family: var(--second-font);
+  font-size: var(--small-font-size);
+  margin-bottom: .5rem;
+}
+
+.projects_description {
+  font-size: var(--small-font-size);
+}
+
+.projects_img {
+  border-radius: 1.5rem;
+}
+
+.projects_button {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--body-color);
+  border: 3px solid var(--first-color);
+  border-radius: 50%;
+  color: var(--title-color);
+  font-size: 2rem;
+  position: absolute;
+  top: .75rem;
+  right: .75rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: box-shadow .4s, opacity .4s;
+}
+
+.projects_button:hover {
+  box-shadow: 0 0 24px var(--first-color);
+}
+
+.projects_image:hover .projects_button {
+  opacity: 1;
+  pointer-events: initial;
+}
 
 
 /* Swiper class */
+.projects_swiper {
+  margin-inline: initial;
+  padding-bottom: 2rem;
+} 
 
+.projects .swiper-pagination-bullets {
+  bottom: 0;
+}
+
+.projects .swiper-pagination-bullet {
+  background-color: var(--first-color);
+  transition: opacity .4s;
+}
 
 /*=============== WORK ===============*/
 
@@ -502,6 +612,10 @@ img {
     width: 190px;
     height: 190px;
   }
+
+  .projects_card {
+    padding-inline: 1rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -530,6 +644,15 @@ img {
 
   .about_data, .about_data .section__title {
     text-align: center;
+  }
+
+  :is(.projects) .section__title {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .projects_card {
+    width: 350px;
   }
 }
 
@@ -669,7 +792,36 @@ img {
     bottom: 0;
   }
   
+  .projects {
+    padding-block: 9rem 4rem;
+  }
 
+  .projects_swiper {
+    padding-bottom: 4rem;
+  }
+
+  .projects_container {
+    max-width: 1380px;
+  }
+
+  .projects_card {
+    width: 440px;
+    padding: 2.5rem;
+    border-radius: 4rem;
+  }
+
+  .projects_subtitle, .projects_description {
+    font-size: var(--normal-font-size);
+  }
+
+  .projects_img {
+    border-radius: 2rem;
+  }
+
+  .projects_button {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
 }
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
